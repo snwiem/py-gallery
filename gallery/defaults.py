@@ -5,9 +5,10 @@ TESTING = True
 SECRET_KEY = "MySecretKey!"
 SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
 
-IMAGE_ROOT = "./albums"
+ALBUM_ROOT = "./albums"
 IMAGE_EXTS = [ "png", "gif", "jpg", "jpeg", "bmp" ]
-THUMB_ROOT = "./thumbs"
+THUMB_ROOT = "./cache/thumbs"
+THUMB_DIMS = (400, 300)
 
 # WTF
 WTF_CSRF_ENABLED = True
