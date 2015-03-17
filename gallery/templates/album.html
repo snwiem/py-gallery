@@ -16,4 +16,12 @@
             {% endfor %}
 
         </div>
+
+        <div class="row">
+            <ul>
+            {% for i in subs %}
+            <li><a href="./{{ i[0] }}">{{ i[1] }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
 {% endblock %}
